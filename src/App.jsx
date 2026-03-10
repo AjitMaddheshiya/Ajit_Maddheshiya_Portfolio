@@ -3,14 +3,31 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Work from "./components/Work/Work";
+import Certificate from "./components/Certificate/Certificate";
+import Achievements from "./components/Achievements/Achievements";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
     <div className="bg-[#050414]">
+      {/* Toast Container - Global */}
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
 
        <BlurBlob position={{ top: '35%', left: '20%' }} size={{ width: '30%', height: '40%' }} />
 
@@ -22,6 +39,8 @@ const App = () => {
         <Skills />
      
         <Work />
+        <Certificate />
+        <Achievements />
         <Education />
         <Contact />
         <Footer />

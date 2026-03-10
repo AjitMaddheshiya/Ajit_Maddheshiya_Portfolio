@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -51,9 +51,6 @@ const Contact = () => {
       id="contact"
       className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
     >
-      {/* Toast Container */}
-      <ToastContainer />
-
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>

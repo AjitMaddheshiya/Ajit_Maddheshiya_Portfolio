@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -22,6 +22,8 @@ const Footer = () => {
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
             { name: "Projects", id: "work" },
+            { name: "Certificates", id: "certificates" },
+            { name: "Achievements", id: "achievements" },
             { name: "Education", id: "education" },
           ].map((item, index) => (
             <button
@@ -34,14 +36,22 @@ const Footer = () => {
           ))}
         </nav>
 
+        {/* Get in Touch */}
+        <div className="mt-6 text-gray-400">
+          <p className="text-purple-500 font-semibold mb-2">Get in Touch</p>
+          <p className="text-sm">📧 majit4516@gmail.com</p>
+          <p className="text-sm">📱 +91 96706 17895</p>
+        </div>
+
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaFacebook />, link: "https://www.instagram.com/_ajit_maddheshiya_2141/" },
-            { icon: <FaTwitter />, link: "https://www.instagram.com/_ajit_maddheshiya_2141/" },
+            //{ icon: <FaFacebook />, link: "https://www.instagram.com/_ajit_maddheshiya_2141/" },
+            //{ icon: <FaTwitter />, link: "https://www.instagram.com/_ajit_maddheshiya_2141/" },
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/ajit-m2024/" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/_ajit_maddheshiya_2141/" },
-            { icon: <FaYoutube />, link: "https://www.youtube.com/@AjitMaddheshiya-x2x" },
+            { icon: <FaGithub />, link: "https://github.com/AjitMaddheshiya" },
+           // { icon: <FaInstagram />, link: "https://www.instagram.com/_ajit_maddheshiya_2141/" },
+           // { icon: <FaYoutube />, link: "https://www.youtube.com/@AjitMaddheshiya-x2x" },
             
           ].map((item, index) => (
             <a

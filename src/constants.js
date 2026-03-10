@@ -67,6 +67,14 @@ import webverLogo from './assets/work_logo/web_dig.png';
 import excelfLogo from './assets/work_logo/excelf.jpg';
 import heartDiseaseLogo from './assets/work_logo/heartDisease.png';
 import removebgLogo from './assets/work_logo/remove_bg.png';
+import feedLogo from './assets/work_logo/feedback.png';
+
+// Certificate Section Logo's
+import googleDataAnalyticsLogo from './assets/certificate_logo/Google Advanced Data Analytics.png';
+import microsoftPowerBILogo from './assets/certificate_logo/Microsoft Power BI Data Analyst.png';
+import oracleDataScienceLogo from './assets/certificate_logo/Oracle Data Science.png';
+import oracleGenerativeAILogo from './assets/certificate_logo/Oracle Genrative AI.png';
+import cloudComputingLogo from './assets/certificate_logo/Cloud Computing.png';
 
 
 export const SkillsInfo = [
@@ -97,10 +105,10 @@ export const SkillsInfo = [
   {
     title: 'Languages',
     skills: [
+      { name: 'Java', logo: javaLogo },
+       { name: 'Python', logo: pythonLogo },
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
       { name: 'SQL', logo: mysqlLogo },
 
     ],
@@ -108,6 +116,7 @@ export const SkillsInfo = [
   {
     title: 'Tools',
     skills: [
+      { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Jupyter Notebook', logo: jupiterLogo },
@@ -115,6 +124,7 @@ export const SkillsInfo = [
       { name: 'IDLE', logo: idleLogo },
       { name: 'IntelliJ IDEA', logo: ideaLogo },
       { name: 'Vercel', logo: vercelLogo },
+      
     ],
   },
 ];
@@ -181,7 +191,7 @@ export const SkillsInfo = [
       img: lpuLogo,
       school: "Lovely Professional University,Phagwara",
       date: "July 2023 - July 2027",
-      grade: "8.54 CGPA",
+      grade: "8.50 CGPA",
       desc: "Pursuing B.Tech in Computer Science and Engineering at Lovely Professional University (2023–2027). Gained strong foundation in programming, DSA, OOP, DBMS, Web Development, and Software Engineering through coursework, projects, and workshops, enhancing technical expertise and problem-solving skills.",
       degree: "Bachelor of Technology (B.Tech)",
     },
@@ -283,6 +293,59 @@ export const SkillsInfo = [
   ],
   github: "https://github.com/AjitMaddheshiya/Predictive-Analytics-Project-Machine-Learning-Pipeline-Heart-Disease-Dataset-",
   webapp: "https://github.com/AjitMaddheshiya/Predictive-Analytics-Project-Machine-Learning-Pipeline-Heart-Disease-Dataset-",
-}
+},
+{
+      id: 0,
+      title: "Driver Feedback & Sentiment Dashboard",
+      description:
+        "I developed a Driver Feedback & Sentiment Dashboard to collect and analyze employee feedback for drivers and trips through an interactive web interface. The system allows users to submit structured feedback using star ratings, quick feedback tags, and optional comments, ensuring an intuitive and efficient feedback process.The application also includes an admin analytics dashboard that visualizes driver sentiment data through charts, sentiment distribution indicators, and performance insights. This enables administrators to monitor feedback trends, evaluate driver performance, and identify potential service issues in real time.I designed a responsive and user-friendly interface that supports multiple feedback entities such as drivers, trips, and service attributes. Additionally, the system provides features like secure login authentication, configurable feedback modules, and dynamic dashboards to ensure flexible usage and clear data visualization.The project demonstrates practical implementation of modern UI design, sentiment-based analytics, and interactive data visualization, helping transform raw feedback into meaningful operational insights.",
+      image: feedLogo,
+      tags: ["CSS", "HTML", "JavaScript","Chart.js","Vercel Deployment"],
+      github: "https://github.com/AjitMaddheshiya/MoveInSync_Driver_Feedback_-_Sentiment_Dashboard",
+      webapp: "https://moveinsync-driver-feedback-sentim.vercel.app/login",
+    }
+  ];
 
-  ];  
+// Certificates Section
+export const certificates = [
+  {
+    id: 0,
+    title: "Google Advanced Data Analytics",
+    description: "Professional certificate in Advanced Data Analytics from Google (Coursera). Covering data visualization, data analysis, and advanced analytics techniques.",
+    image: googleDataAnalyticsLogo,
+    tags: ["Google", "Coursera", "Data Analytics"],
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/MG9GVTNIX14U",
+  },
+  {
+    id: 1,
+    title: "Microsoft Power BI Data Analyst",
+    description: "Professional certificate in Power BI Data Analysis from Microsoft (Coursera). Covering data modeling, DAX, and business intelligence visualization.",
+    image: microsoftPowerBILogo,
+    tags: ["Microsoft", "Coursera", "Power BI"],
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/EYRBOZ30RVD4",
+  },
+  {
+    id: 2,
+    title: "Data Science Professional",
+    description: "Professional certificate in Data Science from Oracle. Covering machine learning, data mining, and predictive analytics.",
+    image: oracleDataScienceLogo,
+    tags: ["Oracle", "Data Science", "Machine Learning"],
+    link: "https://www.linkedin.com/in/ajit-m2024/details/certifications/1761364161315/single-media-viewer?profileId=ACoAAEZ_xpUBlIpikjqTJfOfnHPqk2cjas9wZbk",
+  },
+  {
+    id: 3,
+    title: "Generative AI Professional",
+    description: "Professional certificate in Generative AI from Oracle. Covering AI models, prompt engineering, and AI applications.",
+    image: oracleGenerativeAILogo,
+    tags: ["Oracle", "AI", "Generative AI"],
+    link: "https://www.linkedin.com/in/ajit-m2024/details/certifications/1761364006529/single-media-viewer?profileId=ACoAAEZ_xpUBlIpikjqTJfOfnHPqk2cjas9wZbk",
+  },
+  {
+    id: 4,
+    title: "Cloud Computing",
+    description: "NPTEL certified course in Cloud Computing. Covering cloud architecture, deployment models, and cloud services.",
+    image: cloudComputingLogo,
+    tags: ["NPTEL", "Cloud Computing"],
+    link: "https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs118/Course/NPTEL24CS118S157020022704430245.pdf",
+  },
+];
