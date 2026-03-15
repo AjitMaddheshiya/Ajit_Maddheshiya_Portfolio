@@ -68,6 +68,8 @@ import excelfLogo from './assets/work_logo/excelf.jpg';
 import heartDiseaseLogo from './assets/work_logo/heartDisease.png';
 import removebgLogo from './assets/work_logo/remove_bg.png';
 import feedLogo from './assets/work_logo/feedback.png';
+import FullStackLogo from './assets/work_logo/VingoFood.png';
+import MovieReLogo from './assets/work_logo/MovieRec.png';
 
 // Certificate Section Logo's
 import googleDataAnalyticsLogo from './assets/certificate_logo/Google Advanced Data Analytics.png';
@@ -218,6 +220,36 @@ export const SkillsInfo = [
   export const projects = [
     {
       id: 0,
+      title: "Full-Stack Project: Vingo Food Delivery Platform",
+      description:
+        "I developed a comprehensive food delivery platform that connects customers with local restaurants and delivery personnel, featuring real-time order tracking and secure payment processing. The system processes multi-vendor orders with role-based access control, supporting restaurants, delivery boys, and customers with distinct dashboards and functionalities.The application implements a multi-layered architecture with React frontend, Node.js backend, and MongoDB database, utilizing Socket.IO for real-time delivery tracking and geolocation services. It features sophisticated authentication using JWT tokens, Google OAuth 2.0, and OTP-based email verification, ensuring secure user access across all platforms.I designed an intelligent order management system with Razorpay payment gateway integration, supporting both cash-on-delivery and online payments. The platform includes real-time location tracking using Leaflet maps, automated delivery assignments, and comprehensive order status management from placement to delivery completion.The system features advanced user interfaces with responsive design using Tailwind CSS, Redux state management for complex data flow, and component-based architecture for maintainability. It includes image management with Cloudinary, email notifications via Nodemailer, and automated deployment pipelines on Vercel (frontend) and Render (backend).This demonstrates practical implementation of modern full-stack development patterns, from database design and API architecture to real-time communication and payment integration, transforming food ordering requirements into a scalable, production-ready delivery platform.",
+      image: FullStackLogo,
+      tags: ["React", "Redux", "Node.js", "Express", "MongoDB", "Socket.IO", "Firebase", "Razorpay", "Tailwind CSS", "JWT", "OAuth", "Nodemailer"],
+      github: "https://github.com/AjitMaddheshiya/VingoFoodDeliveryApp",
+      webapp: "https://vingo-food-delivery-app-nine.vercel.app/signin",
+    },
+    {
+      id: 1,
+      title: "Movie Recommendation System Using ML",
+      description:
+        "I developed an Intelligent Movie Recommendation System that analyzes and suggests movies based on content similarity using advanced machine learning techniques. The system processes a comprehensive TMDB dataset containing 5,000+ movies, performing sophisticated data preprocessing including JSON parsing, feature extraction, and text tokenization to build meaningful movie representations.The application implements a content-based filtering approach using TF-IDF vectorization with weighted feature engineering, giving higher importance to genres, keywords, cast, and crew information. It utilizes cosine similarity algorithms to calculate movie similarities and K-means clustering for unsupervised movie grouping, enabling intelligent recommendation patterns.I designed an intelligent user interface with smart input validation that provides helpful suggestions when users enter incorrect movie names, ensuring a seamless user experience. The system generates personalized recommendations by displaying the top 10 most similar movies based on genre patterns, cast preferences, and content characteristics.The project includes comprehensive data visualization capabilities with multiple interactive charts including genre distribution analysis, keyword frequency patterns, correlation heatmaps, and 3D PCA clusters. These visualizations help identify movie trends, genre preferences, and similarity patterns within the dataset.This demonstrates practical implementation of modern machine learning pipelines, from data preprocessing and feature engineering to model deployment and visualization, transforming raw movie data into meaningful entertainment recommendations and insights.",
+      image: MovieReLogo,
+      tags: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "TF-IDF", "Cosine Similarity", "K-Means", "PCA"],
+      github: "https://github.com/AjitMaddheshiya/MovieRecommendSystem",
+      webapp: "https://github.com/AjitMaddheshiya/MovieRecommendSystem",
+    },
+    {
+      id: 2,
+      title: "Driver Feedback & Sentiment Dashboard",
+      description:
+        "I developed a Driver Feedback & Sentiment Dashboard to collect and analyze employee feedback for drivers and trips through an interactive web interface. The system allows users to submit structured feedback using star ratings, quick feedback tags, and optional comments, ensuring an intuitive and efficient feedback process.The application also includes an admin analytics dashboard that visualizes driver sentiment data through charts, sentiment distribution indicators, and performance insights. This enables administrators to monitor feedback trends, evaluate driver performance, and identify potential service issues in real time.I designed a responsive and user-friendly interface that supports multiple feedback entities such as drivers, trips, and service attributes. Additionally, the system provides features like secure login authentication, configurable feedback modules, and dynamic dashboards to ensure flexible usage and clear data visualization.The project demonstrates practical implementation of modern UI design, sentiment-based analytics, and interactive data visualization, helping transform raw feedback into meaningful operational insights.",
+      image: feedLogo,
+      tags: ["CSS", "HTML", "JavaScript","Chart.js","Vercel Deployment"],
+      github: "https://github.com/AjitMaddheshiya/MoveInSync_Driver_Feedback_-_Sentiment_Dashboard",
+      webapp: "https://moveinsync-driver-feedback-sentim.vercel.app/login",
+    },
+    {
+      id: 3,
       title: "Banking Mangament System",
       description:
         "I developed a Banking Management System using Java and JDBC to efficiently handle customer accounts, transactions, and balance inquiries. The system included backend functionality for secure deposit, withdrawal, and fund transfer operations, ensuring accuracy and reliability. I also designed an intuitive user interface with Java Swing, providing smooth navigation between account management, transaction history, and customer service features. Additionally, I implemented secure modules for user registration, login authentication, and new account creation to maintain data integrity and safe access.",
@@ -227,17 +259,17 @@ export const SkillsInfo = [
       webapp: "https://github.com/AjitMaddheshiya/Banking-Mangament-System-JDBC-JAVA-MySQL",
     },
     {
-      id: 1,
+      id: 4,
       title: "Sorting Algorithm Visualizer",
       description:
         "I developed a Sorting Algorithm Visualizer application using Java to demonstrate the step-by-step execution of various sorting techniques, including Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, and Heap Sort. The project featured an interactive GUI built with Java Swing to display real-time animations, making it easier to understand the performance and behavior of different algorithms. By leveraging data structures and algorithmic concepts, I implemented and optimized sorting techniques, enabling users to visually compare their efficiency and complexity. The application also included user-friendly controls to select algorithms, adjust array size and speed, and reset the visualizer, offering a hands-on learning experience.",
       image: sortLogo,
-      tags: ["Java", "Java Swing", "Data Structure", "Sorting Algorithm"],
+      tags: ["Java", "Java Swing", "Data Structure", "Sorting Algorithm", " Threading" ,"Custom Graphics Programming"],
       github: "https://github.com/AjitMaddheshiya/Sorting-Algorithm-Visualizer-Using-GUI-Java-DSA-Java-Swing-",
       webapp: "https://github.com/AjitMaddheshiya/Sorting-Algorithm-Visualizer-Using-GUI-Java-DSA-Java-Swing-",
     },
     {
-      id: 2,
+      id: 5,
       title: "Quarterly Retail Sales Tax Data Analysis",
       description:
         "I analyzed quarterly retail sales and tax data using Python to uncover key trends, seasonal variations, and category-wise performance across different regions. Using Pandas and NumPy, I cleaned, preprocessed, and aggregated large datasets to generate accurate insights and statistical summaries. To visualize the findings, I leveraged Matplotlib and Seaborn to create bar charts, line graphs, and heatmaps that effectively represented sales growth, tax revenue, and category comparisons. Additionally, I generated quarterly comparison reports to support decision-making for retail strategies, tax planning, and identifying high-performing business segments.",
@@ -247,7 +279,7 @@ export const SkillsInfo = [
       webapp: "https://github.com/AjitMaddheshiya/Quarterly-Retail-Sales-Tax-Data-Analysis-Python-Numpy-Pandas-Seaborn-Matlpotlib-etc-",
     },
     {
-      id: 3,
+      id: 6,
       title: "Product Sales Analysis and Visualization ",
       description:
         "I designed and developed an interactive sales dashboard in Power BI using a multi-table relational model to provide a comprehensive view of global product sales. The dashboard included key KPIs such as Total Sales, Profit Margin, and Top-Selling Products, with DAX formulas enabling dynamic calculations like year-wise quantity sold, product category breakdown, and monthly sales goals. To deliver deep business insights, I integrated various data visualizations including bar charts, pie charts, maps, and slicers for filtering by year, city, product line, and employee. Additionally, I leveraged advanced Power BI features such as calculated columns, relationships, tooltips, and filters to support drill-down analysis and visually track performance trends across regions, years, and product categories.",
@@ -257,7 +289,7 @@ export const SkillsInfo = [
       webapp: "https://github.com/AjitMaddheshiya/Product-Sales-Analysis-and-Visualization-Power-BI",
     },
     {
-      id: 4,
+      id: 7,
       title: "Super Store Sales Dataset",
       description:
         "I designed an interactive sales dashboard in Tableau using multiple datasets (Orders, Returns, and Managers) to track KPIs such as sales, profit, and category-wise performance, with segmented views by Region and Segment (Consumer, Corporate, Home Office). The dashboard featured geospatial visualizations with map charts to display sales across U.S. cities and included dynamic filters and drill-down actions for highlighting specific locations and categories. I implemented diverse chart types such as bar charts, scatter plots, and pie charts to compare Sales vs Profit and provide category-wise breakdowns, supported by calculated fields and parameter controls for deeper analysis. Additionally, I prepared and cleaned raw Excel data (2015–2017), ensuring consistency through joins, data type adjustments, and field customizations, which enabled reliable and insightful visual storytelling.",
@@ -267,7 +299,7 @@ export const SkillsInfo = [
       webapp: "https://github.com/AjitMaddheshiya/Super-Store-sales-Dataset-Tableau-Public",
     },
     {
-      id: 5,
+      id: 8,
       title: "Coffee Shop Sales Dashboard",
       description:
         "I utilized Excel Power Pivot to manage relationships between data fields and perform complex calculations on large datasets efficiently. Pivot Tables were applied to summarize, filter, and aggregate key metrics such as total revenue, units sold, and profit across regions, item types, and sales channels. To enhance understanding, I created charts and graphs that visualized sales trends, geographical performance, product demand, and profit distribution in an intuitive way. Additionally, I performed data cleaning to ensure accuracy and consistency by handling missing values, correcting formatting issues, and verifying data integrity across all fields.",
@@ -277,7 +309,7 @@ export const SkillsInfo = [
       webapp: "https://github.com/AjitMaddheshiya/Coffee-Shop-Sales-Dashboard-MS-Excel",
     },
     {
-  id: 6,
+  id: 9,
   title: "Heart Disease Prediction using Machine Learning",
   description:
     "I developed a Heart Disease Prediction system as part of my Predictive Analytics (Machine Learning) coursework. The project involved end-to-end data preprocessing and exploratory data analysis (EDA) on a heart disease dataset, including handling missing values, removing duplicates, outlier detection using IQR, and feature encoding. I implemented multiple machine learning models such as Multiple Linear Regression to predict cholesterol levels, and classification algorithms including Logistic Regression, K-Nearest Neighbors (KNN), and Support Vector Machine (SVM) to predict the presence of heart disease. Additionally, I applied K-Means clustering to identify patient risk groups, used Principal Component Analysis (PCA) for dimensionality reduction, and trained a Neural Network (MLP) for improved classification performance. The models were evaluated using metrics like MAE, MSE, RMSE, R² score, accuracy, confusion matrix, classification report, and k-fold cross-validation to ensure reliability and robustness.",
@@ -293,17 +325,8 @@ export const SkillsInfo = [
   ],
   github: "https://github.com/AjitMaddheshiya/Predictive-Analytics-Project-Machine-Learning-Pipeline-Heart-Disease-Dataset-",
   webapp: "https://github.com/AjitMaddheshiya/Predictive-Analytics-Project-Machine-Learning-Pipeline-Heart-Disease-Dataset-",
-},
-{
-      id: 0,
-      title: "Driver Feedback & Sentiment Dashboard",
-      description:
-        "I developed a Driver Feedback & Sentiment Dashboard to collect and analyze employee feedback for drivers and trips through an interactive web interface. The system allows users to submit structured feedback using star ratings, quick feedback tags, and optional comments, ensuring an intuitive and efficient feedback process.The application also includes an admin analytics dashboard that visualizes driver sentiment data through charts, sentiment distribution indicators, and performance insights. This enables administrators to monitor feedback trends, evaluate driver performance, and identify potential service issues in real time.I designed a responsive and user-friendly interface that supports multiple feedback entities such as drivers, trips, and service attributes. Additionally, the system provides features like secure login authentication, configurable feedback modules, and dynamic dashboards to ensure flexible usage and clear data visualization.The project demonstrates practical implementation of modern UI design, sentiment-based analytics, and interactive data visualization, helping transform raw feedback into meaningful operational insights.",
-      image: feedLogo,
-      tags: ["CSS", "HTML", "JavaScript","Chart.js","Vercel Deployment"],
-      github: "https://github.com/AjitMaddheshiya/MoveInSync_Driver_Feedback_-_Sentiment_Dashboard",
-      webapp: "https://moveinsync-driver-feedback-sentim.vercel.app/login",
-    }
+}
+
   ];
 
 // Certificates Section
